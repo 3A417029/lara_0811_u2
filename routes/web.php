@@ -23,6 +23,12 @@ Route::get('/',function(){
     return view('welcome');
 });
 
+/* 設定 Route 跳轉頁面 */
+
+Route::get('/',function(){
+    return redirect('welcome');
+});
+    
 
     
 
