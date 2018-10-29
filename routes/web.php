@@ -66,7 +66,10 @@ Route::group(['prefix'=>'admin'],function(){
         return 'admindashboard';
     });
 });
-    
+
+/* 將 Route 的內容搬至 Controller 內 */
+Route::get('/',['as'=>'home.index','uses'=>'HomeController@index']);
+
     
 
     
